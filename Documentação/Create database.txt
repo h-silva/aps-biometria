@@ -1,0 +1,32 @@
+create table usuario(
+	codigo serial primary key,
+	usuario text not null unique,
+	senha text not null,
+	nomeCompleto text,
+	email text,
+	dataNascimento Date,
+	imagem bytea,
+	digital bytea
+);
+
+
+create table usuarioD(
+	codigo serial primary key,
+	usuario text not null unique,
+	senha text not null,
+	nomeCompleto text,
+	email text,
+	nivelAcesso int,
+	dataNascimento Date,
+	imagem bytea,
+	digital bytea,
+	Format int,
+            DataLength  int,
+            DataType  int,
+            Length  int,
+            Purpose  int,
+            Quality  int,
+            Reserved int,
+            Version int
+);
+            
